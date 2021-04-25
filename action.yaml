@@ -8,5 +8,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: ${{ github.action_path }}/update-wiki.sh
+    - run: ${{ github.action_path }}/update-wiki.sh ${{ inputs.path }}
       shell: bash
