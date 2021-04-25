@@ -25,4 +25,4 @@ echo "Setup git and push"
 git config --local user.email $author
 git config --local user.name $email
 git add .
-git commit -m "$message" && git push 
+git commit -m "$message" && git push "https://$author:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git"
