@@ -5,8 +5,11 @@ inputs:
     description: 'Location of wiki directory'
     required: true
     default: 'wiki'
+  token:
+    description: 'Github token'
+    required: true
 runs:
   using: "composite"
   steps:
-    - run: ${{ github.action_path }}/update-wiki.sh ${{ inputs.path }}
+    - run: ${{ github.action_path }}/update-wiki.sh ${{ inputs.path }} ${{ inputs.token }}
       shell: bash
