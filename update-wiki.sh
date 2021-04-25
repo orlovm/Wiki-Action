@@ -8,7 +8,7 @@ email=`git log -1 --format="%ae"`
 message=`git log -1 --format="%s"`
 
 #Clone wiki repo
-git clone https://github.com/$GITHUB_REPO.wiki.git $TEMP_WIKI_FOLDER
+git clone https://github.com/$GITHUB_REPOSITORY.wiki.git $TEMP_WIKI_FOLDER
 
 #Copy edited wiki 
 cp -r $1/. $TEMP_WIKI_FOLDER
