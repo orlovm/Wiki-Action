@@ -9,7 +9,7 @@ message=`git log -1 --format="%s"`
 
 #Clone wiki repo
 echo "Clone wiki repo https://github.com/$GITHUB_REPOSITORY.wiki.git"
-git clone https://$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git $TEMP_WIKI_FOLDER
+git clone https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git $TEMP_WIKI_FOLDER
 
 echo "Copy edited wiki"
 cp -r $1/. $TEMP_WIKI_FOLDER
@@ -25,4 +25,4 @@ echo "Setup git and push"
 git config --local user.email $author
 git config --local user.name $email
 git add .
-git commit -m "$message" && git push "https://$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git"
+git commit -m "$message" && git push "https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git"
