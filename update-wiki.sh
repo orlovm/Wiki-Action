@@ -8,19 +8,20 @@ email=`git log -1 --format="%ae"`
 message=`git log -1 --format="%s"`
 
 #Clone wiki repo
+echo "Clone wiki repo https://github.com/$GITHUB_REPOSITORY.wiki.git"
 git clone https://github.com/$GITHUB_REPOSITORY.wiki.git $TEMP_WIKI_FOLDER
 
-#Copy edited wiki 
+echo "Copy edited wiki"
 cp -r $1/. $TEMP_WIKI_FOLDER
 
-#Check if wiki has changes
+echo "Check if wiki has changes"
 cd $TEMP_WIKI_FOLDER
 if git diff-index --quiet HEAD; then
   echo "Nothing changed"
   return
 fi
 
-#Setup git and push
+echo "Setup git and push"
 git config --local user.email $author
 git config --local user.name $email
 git add .

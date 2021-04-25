@@ -4,7 +4,7 @@ inputs:
   path:  # id of input
     description: 'Location of wiki directory'
     required: true
-    default: 'World'
+    default: 'wiki'
 runs:
   using: "composite"
   steps:
