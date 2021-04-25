@@ -1,4 +1,4 @@
-#!/bin/sh
+!/bin/sh
 
 TEMP_WIKI_FOLDER="temp_wiki_$GITHUB_SHA"
 
@@ -25,4 +25,4 @@ echo "Setup git and push"
 git config --local user.email $author
 git config --local user.name $email
 git add .
-git commit -m "$message" && git push
+git commit -m "$message" && git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOITORY.wiki.git"
