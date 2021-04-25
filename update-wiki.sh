@@ -22,7 +22,7 @@ if git diff-index --quiet HEAD; then
 fi
 
 echo "Setup git and push"
-git config --local user.email $author
-git config --local user.name $email
+git config --local user.email $email
+git config --local user.name $author 
 git add .
-git commit -m "$message" && git push "https://$author:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git"
+git commit -m "$message" && git push "https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git"
