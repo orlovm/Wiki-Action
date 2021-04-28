@@ -34,7 +34,7 @@ if git diff-index --quiet HEAD; then
 fi
 
 echo "Pushing changes to wiki"
-git config --local user.email $GITHUB_ACTOR
-git config --local user.name $author 
+git config --local user.email $GITHUB_ACTOR@users.noreply.github.com
+git config --local user.name $GITHUB_ACTOR 
 git add .
 git commit -m "$message" && git push "https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git"
