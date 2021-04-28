@@ -28,13 +28,13 @@ cp -r $1/. $TEMP_WIKI_FOLDER
 
 echo "Checking if wiki has changes"
 cd $TEMP_WIKI_FOLDER
+git config --local user.email $email
+git config --local user.name $author 
+git add .
 if git diff-index --quiet HEAD; then
   echo "Nothing changed"
   exit 0
 fi
 
 echo "Pushing changes to wiki"
-git config --local user.email $email
-git config --local user.name $author 
-git add .
 git commit -m "$message" && git push "https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git"
