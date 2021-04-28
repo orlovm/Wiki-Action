@@ -22,10 +22,10 @@ message=`git log -1 --format="%s"`
 
 #Clone repo
 echo "Cloning repo https://github.com/$GITHUB_REPOSITORY"
-git clone https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY $TEMP_WIKI_DIR
+git clone https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY $TEMP_REPO_DIR
 
 #Clone wiki repo
-cd TEMP_REPO_DIR
+cd $TEMP_REPO_DIR
 echo "Cloning wiki repo https://github.com/$GITHUB_REPOSITORY.wiki.git"
 git clone https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git $TEMP_WIKI_DIR
 
