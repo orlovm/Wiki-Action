@@ -1,6 +1,7 @@
 #!/bin/sh
 
-TEMP_WIKI_FOLDER="temp_wiki_$GITHUB_SHA"
+TEMP_REPO_DIR="wiki_action_$GITHUB_REPOSITORY$GITHUB_SHA"
+TEMP_WIKI_DIR="temp_wiki_$GITHUB_SHA"
 WIKI_DIR=$1
 GH_TOKEN=$2
 
@@ -19,15 +20,20 @@ author=`git log -1 --format="%an"`
 email=`git log -1 --format="%ae"`
 message=`git log -1 --format="%s"`
 
+#Clone repo
+echo "Cloning repo https://github.com/$GITHUB_REPOSITORY"
+git clone https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY $TEMP_WIKI_DIR
+
 #Clone wiki repo
+cd TEMP_REPO_DIR
 echo "Cloning wiki repo https://github.com/$GITHUB_REPOSITORY.wiki.git"
-git clone https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git $TEMP_WIKI_FOLDER
+git clone https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git $TEMP_WIKI_DIR
 
 echo "Copying edited wiki"
-cp -r $1/. $TEMP_WIKI_FOLDER
+cp -R $TEMP_WIKI_FOLDER/.git $WIKI_DIR/
 
 echo "Checking if wiki has changes"
-cd $TEMP_WIKI_FOLDER
+cd $WIKI_DIR
 git config --local user.email $email
 git config --local user.name $author 
 git add .
