@@ -30,7 +30,7 @@ echo "Cloning wiki repo https://github.com/$GITHUB_REPOSITORY.wiki.git"
 git clone https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git $TEMP_WIKI_DIR
 
 echo "Copying edited wiki"
-cp -R $TEMP_WIKI_FOLDER/.git $WIKI_DIR/
+cp -R $TEMP_WIKI_DIR/.git $WIKI_DIR/
 
 echo "Checking if wiki has changes"
 cd $WIKI_DIR
