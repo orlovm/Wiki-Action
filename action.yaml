@@ -1,7 +1,7 @@
 name: 'Update wiki'
 description: 'This action updates wiki repository with changes made in base repository'
 inputs:
-  path:  # id of input
+  path:  
     description: 'Location of wiki directory'
     required: true
     default: 'wiki'
@@ -13,3 +13,7 @@ runs:
   steps:
     - run: ${{ github.action_path }}/update-wiki.sh ${{ inputs.path }} ${{ inputs.token }}
       shell: bash
+
+branding:
+  icon: book-open
+  color: white 
