@@ -15,10 +15,6 @@ if [ -z "$GH_TOKEN" ]; then
     exit 1
 fi
 
-#Get commit details
-author=`git log -1 --format="%an"`
-email=`git log -1 --format="%ae"`
-message=`git log -1 --format="%s"`
 
 #Clone repo
 echo "Cloning repo https://github.com/$GITHUB_REPOSITORY"
@@ -28,6 +24,11 @@ git clone https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY $TEMP_RE
 cd $TEMP_REPO_DIR
 echo "Cloning wiki repo https://github.com/$GITHUB_REPOSITORY.wiki.git"
 git clone https://$GITHUB_ACTOR:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git $TEMP_WIKI_DIR
+
+#Get commit details
+author=`git log -1 --format="%an"`
+email=`git log -1 --format="%ae"`
+message=`git log -1 --format="%s"`
 
 echo "Copying edited wiki"
 cp -R $TEMP_WIKI_DIR/.git $WIKI_DIR/
