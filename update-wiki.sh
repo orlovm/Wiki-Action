@@ -7,7 +7,7 @@ GH_TOKEN=$2
 
 if [ -z "$WIKI_DIR" ]; then
     echo "Wiki location is not specified, using default wiki/"
-    WIKI_DIR='wiki/'
+    WIKI_DIR='wiki'
 fi
 
 if [ -z "$GH_TOKEN" ]; then

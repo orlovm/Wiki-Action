@@ -28,7 +28,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Update wiki
     steps:
-    - uses: actions/checkout@v2
     - uses: OrlovM/Wiki-Action@v0.1.16
       with:
         path: 'wiki'
