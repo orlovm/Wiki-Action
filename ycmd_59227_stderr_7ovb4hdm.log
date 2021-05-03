@@ -1,0 +1,82 @@
+2021-05-03 13:07:13,636 - INFO - Completion config: 50, detailing -1 candiates
+2021-05-03 13:07:13,636 - INFO - Completion config: 50, detailing -1 candiates
+2021-05-03 13:07:13,636 - INFO - Completion config: 50, detailing -1 candiates
+2021-05-03 13:07:13,637 - INFO - Completion config: 50, detailing -1 candiates
+2021-05-03 13:07:13,684 - INFO - Received ready request
+2021-05-03 13:07:13,694 - INFO - Received signature help available request
+2021-05-03 13:07:13,700 - INFO - Received event notification
+2021-05-03 13:07:13,701 - ERROR - Semantic completion not available for ['sh']
+Traceback (most recent call last):
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 106, in FiletypeCompletionAvailable
+    self.GetFiletypeCompleter( filetypes )
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 91, in GetFiletypeCompleter
+    raise ValueError(
+ValueError: No semantic completer exists for filetypes: ['sh']
+2021-05-03 13:07:13,703 - INFO - Received event notification
+2021-05-03 13:07:13,704 - INFO - Adding buffer identifiers for file: /home/mikhail/go/src/Wiki-Action/update-wiki.sh
+2021-05-03 13:07:13,713 - ERROR - Semantic completion not available for ['sh']
+Traceback (most recent call last):
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 106, in FiletypeCompletionAvailable
+    self.GetFiletypeCompleter( filetypes )
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 91, in GetFiletypeCompleter
+    raise ValueError(
+ValueError: No semantic completer exists for filetypes: ['sh']
+2021-05-03 13:07:13,805 - INFO - Received filetype completion available request
+2021-05-03 13:07:13,805 - ERROR - Semantic completion not available for ['sh']
+Traceback (most recent call last):
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 106, in FiletypeCompletionAvailable
+    self.GetFiletypeCompleter( filetypes )
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 91, in GetFiletypeCompleter
+    raise ValueError(
+ValueError: No semantic completer exists for filetypes: ['sh']
+2021-05-03 13:07:16,732 - INFO - Received event notification
+2021-05-03 13:07:16,733 - ERROR - Semantic completion not available for ['sh']
+Traceback (most recent call last):
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 106, in FiletypeCompletionAvailable
+    self.GetFiletypeCompleter( filetypes )
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 91, in GetFiletypeCompleter
+    raise ValueError(
+ValueError: No semantic completer exists for filetypes: ['sh']
+2021-05-03 13:13:45,082 - INFO - Received event notification
+2021-05-03 13:13:45,082 - INFO - Adding buffer identifiers for file: /home/mikhail/go/src/Wiki-Action/update-wiki.sh
+2021-05-03 13:13:45,083 - ERROR - Semantic completion not available for ['sh']
+Traceback (most recent call last):
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 106, in FiletypeCompletionAvailable
+    self.GetFiletypeCompleter( filetypes )
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 91, in GetFiletypeCompleter
+    raise ValueError(
+ValueError: No semantic completer exists for filetypes: ['sh']
+2021-05-03 13:13:46,277 - INFO - Received completion request
+2021-05-03 13:13:46,277 - ERROR - Semantic completion not available for ['sh']
+Traceback (most recent call last):
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 106, in FiletypeCompletionAvailable
+    self.GetFiletypeCompleter( filetypes )
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 91, in GetFiletypeCompleter
+    raise ValueError(
+ValueError: No semantic completer exists for filetypes: ['sh']
+2021-05-03 13:13:46,899 - INFO - Received event notification
+2021-05-03 13:13:46,900 - INFO - Adding buffer identifiers for file: /home/mikhail/go/src/Wiki-Action/update-wiki.sh
+2021-05-03 13:13:46,900 - ERROR - Semantic completion not available for ['sh']
+Traceback (most recent call last):
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 106, in FiletypeCompletionAvailable
+    self.GetFiletypeCompleter( filetypes )
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 91, in GetFiletypeCompleter
+    raise ValueError(
+ValueError: No semantic completer exists for filetypes: ['sh']
+2021-05-03 13:13:46,904 - INFO - Received event notification
+2021-05-03 13:13:46,904 - INFO - Adding ONE buffer identifier for file: /home/mikhail/go/src/Wiki-Action/update-wiki.sh
+2021-05-03 13:13:46,904 - ERROR - Semantic completion not available for ['sh']
+Traceback (most recent call last):
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 106, in FiletypeCompletionAvailable
+    self.GetFiletypeCompleter( filetypes )
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 91, in GetFiletypeCompleter
+    raise ValueError(
+ValueError: No semantic completer exists for filetypes: ['sh']
+2021-05-03 13:13:48,362 - INFO - Received event notification
+2021-05-03 13:13:48,362 - ERROR - Semantic completion not available for ['sh']
+Traceback (most recent call last):
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 106, in FiletypeCompletionAvailable
+    self.GetFiletypeCompleter( filetypes )
+  File "/home/mikhail/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd/server_state.py", line 91, in GetFiletypeCompleter
+    raise ValueError(
+ValueError: No semantic completer exists for filetypes: ['sh']

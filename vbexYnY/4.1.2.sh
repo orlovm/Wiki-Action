@@ -1,5 +1,5 @@
 #!/bin/sh
-set -eux
+set -euo pipefail
 
 TEMP_REPO_DIR="wiki_action_$GITHUB_REPOSITORY$GITHUB_SHA"
 TEMP_WIKI_DIR="temp_wiki_$GITHUB_SHA"
