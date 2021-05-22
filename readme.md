@@ -5,7 +5,7 @@ Manage your wiki files in your repository. This action will push changes to the 
 ---
 ### Features
 
-- Automaticly pushes changes from specified directiory to the wiki.
+- Automatically pushes changes from specified directiory to the wiki.
 - Uses author from repository's git commit.
 - Uses the commit message from repository's git commit. 
 - It's easy to pull request/merge wiki files. 
