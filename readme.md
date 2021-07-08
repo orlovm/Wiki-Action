@@ -1,6 +1,6 @@
 # OrlovM/Wiki-Action
 Manage your wiki files in your repository. This action will push changes to the wiki repository.  
-The result will be placed in a `json` file
+The result will be placed in a `json` file.
 
 
 ---
