@@ -3,8 +3,6 @@ set -eu
 
 TEMP_REPO_DIR="wiki_action_$GITHUB_REPOSITORY$GITHUB_SHA"
 TEMP_WIKI_DIR="temp_wiki_$GITHUB_SHA"
-WIKI_DIR="$INPUT_PATH"
-GH_TOKEN="$INPUT_TOKEN"
 
 if [ -z "$WIKI_DIR" ]; then
     echo "Wiki location is not specified, using default wiki/"
