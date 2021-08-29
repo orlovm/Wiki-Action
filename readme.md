@@ -14,7 +14,7 @@ Manage your wiki files in your repository. This action will push changes to the 
 ### Usage
 
 You should have a copy of your wiki inside your repository.
-Use ```Git clone [RepositoryName].wiki.git wiki``` to clone a wiki repo inside your repository.
+Use ```git clone [RepositoryName].wiki.git wiki``` to clone a wiki repo inside your repository.
 
 If wiki does not exist yet, create an empty page on Github wiki through Github web interface.
 
