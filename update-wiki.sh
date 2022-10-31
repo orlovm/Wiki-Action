@@ -34,8 +34,10 @@ cp -R "$TEMP_WIKI_DIR/.git" "$WIKI_DIR/"
 
 echo "Checking if wiki has changes"
 cd "$WIKI_DIR"
-git config --local user.email "$email"
-git config --local user.name "$author" 
+
+git config user.name  "[bot] ${GITHUB_ACTOR}"
+git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
 git add .
 if git diff-index --quiet HEAD; then
   echo "Nothing changed"
